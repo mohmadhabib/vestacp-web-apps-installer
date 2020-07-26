@@ -9,6 +9,7 @@
         <option value=""><?= __("Select an app") ?></option>
         <option value="wordpress">Wordpress</option>
         <option value="moodle">Moodle</option>
+        <option value="opencart">Opencart</option>
     </select>
     <br><br>
 
