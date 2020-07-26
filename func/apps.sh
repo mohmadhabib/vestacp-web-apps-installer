@@ -125,7 +125,35 @@ moodle() {
     echo -e "\nInstallation completed"
 }
 
+opencart() {
+    local user_name="$1"
+    local web_domain="$2"
 
+    web_path="/home/$user_name/web/$web_domain";
+
+    check_dir="$(check_web_dir "$user_name" "$web_domain")"
+    if [[ "$check_dir" != "1" ]]; then
+        echo "$check_dir"
+        return
+    fi
+
+    echo "== Downloading OpenCart..."
+    curl -L -J  'https://github.com/opencart/opencart/releases/download/3.0.3.6/opencart-3.0.3.6.zip' -o "/home/$user_name/tmp/opencart3036.zip" 2>&1
+
+    echo -e "\n== Extract files..."
+    unzip "/home/$user_name/tmp/opencart3036.zip" -d "/home/$user_name/tmp"
+    rm -f "/home/$user_name/tmp/opencart3036.zip"
+
+    # Change owner
+    chown "$user_name:$user_name" -R "/home/$user_name/tmp/opencart3036"
+    # Clean up vesta initial files
+    rm -rf "$web_path/public_html/index.html" "$web_path/public_html/robots.txt"
+    # Move files to the public_html
+    mv "/home/$user_name/tmp/opencart3036/"* "$web_path/public_html"
+    rm -rf "/home/$user_name/tmp/opencart3036"
+
+    echo -e "\nInstallation completed"
+}
 
 
 
