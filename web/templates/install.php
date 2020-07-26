@@ -39,4 +39,4 @@
 </form>
 </div>
 
-<p class="mh-footer">Modified By <a href="https://mknh.work/">Mohammad Habib</a></p>
+<p class="love">Modified with <i class="icon ion-heart"></i> by Mohammad Habib</p>
