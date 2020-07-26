@@ -10,3 +10,8 @@
 * Second add the plugin by url `https://github.com/mohmadhabib/vestacp-web-apps` and Press Install, Then the Messag will Appear to Say Plugin is Installed successfully.
 ![install-new-plugin.png](install-new-plugin.png)
 
+## To-Do-List
+- [x] Translate The Comments to English
+- [x] WordPress Installer From BR to English
+- [ ] Add More Scripts (In Progress)
+
