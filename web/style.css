@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 p.mh-footer {
-    color: red;
+    color: blue;
+    text-align: center;
     
 }
