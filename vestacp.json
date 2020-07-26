@@ -3,11 +3,11 @@
   "description": "Install web applications like wordpress with one click.",
   "version": "0.1.0",
   "min-vesta": "0.9.8",
-  "repository": "https://github.com/jhmaverick/vestacp-web-apps",
-  "homepage": "https://github.com/jhmaverick/vestacp-web-apps#readme",
+  "repository": "https://github.com/mohmadhabib/vestacp-web-apps",
+  "homepage": "https://github.com/mohmadhabib/vestacp-web-apps#readme",
   "author": {
-    "name": "João Henrique",
-    "email": "joao_henriquee@outlook.com",
-    "homepage": "https://github.com/jhmaverick/"
+    "name": "Mohammad Habib",
+    "email": "mohmad.habib@gmail.com",
+    "homepage": "https://github.com/mohmadhabib/"
   }
 }
