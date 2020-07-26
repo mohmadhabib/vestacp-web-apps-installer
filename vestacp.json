@@ -1,5 +1,5 @@
 {
-  "name": "web-apps",
+  "name": "Web Apps Installer",
   "description": "Install web applications like wordpress with one click.",
   "version": "0.1.0",
   "min-vesta": "0.9.8",
