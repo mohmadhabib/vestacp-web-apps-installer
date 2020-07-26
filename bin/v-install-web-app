@@ -21,7 +21,7 @@ fi
 
 if [[ "$app" == "wordpress" ]]; then
     wordpress "$user_name" "$web_domain"
-[[ "$app" == "moodle" ]]; then
+elif [[ "$app" == "moodle" ]]; then
     moodle "$user_name" "$web_domain"
 elif [[ "$app" == "opencart" ]]; then
     opencart "$user_name" "$web_domain"
