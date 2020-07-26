@@ -1,6 +1,6 @@
 {
-  "name": "Web Apps Installer",
-  "description": "Install web applications like wordpress with one click.",
+  "name": "web-apps",
+  "description": "Install web applications like WordPress, Moodle, OpenCart with one click.",
   "version": "0.1.0",
   "min-vesta": "0.9.8",
   "repository": "https://github.com/mohmadhabib/vestacp-web-apps",
