@@ -9,7 +9,6 @@
         <option value=""><?= __("Select an app") ?></option>
         <option value="wordpress">Wordpress</option>
         <option value="moodle">Moodle</option>
-        <option value="opencart">Opencart</option>
     </select>
     <br><br>
 
@@ -39,3 +38,5 @@
     <button class="button confirm" type="submit"><?= __("Install") ?></button>
 </form>
 </div>
+
+<p class="mh-footer">Modified By <a href="https://mknh.work/">Mohammad Habib</a></p>
