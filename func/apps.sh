@@ -138,19 +138,19 @@ opencart() {
     fi
 
     echo "== Downloading OpenCart..."
-    curl -L -J  'https://github.com/opencart/opencart/releases/download/3.0.3.6/opencart-3.0.3.6.zip' -o "/home/$user_name/tmp/opencart3036.zip" 2>&1
+    curl -L -J  'https://github.com/opencart/opencart/releases/download/3.0.3.6/opencart-3.0.3.6.zip' -o "/home/$user_name/tmp/opencart.zip" 2>&1
 
     echo -e "\n== Extract files..."
-    unzip "/home/$user_name/tmp/opencart3036.zip" -d "/home/$user_name/tmp"
-    rm -f "/home/$user_name/tmp/opencart3036.zip"
+    unzip "/home/$user_name/tmp/opencart.zip" -d "/home/$user_name/tmp"
+    rm -f "/home/$user_name/tmp/opencart.zip"
 
     # Change owner
-    chown "$user_name:$user_name" -R "/home/$user_name/tmp/opencart3036"
+    chown "$user_name:$user_name" -R "/home/$user_name/tmp/opencart"
     # Clean up vesta initial files
     rm -rf "$web_path/public_html/index.html" "$web_path/public_html/robots.txt"
     # Move files to the public_html
-    mv "/home/$user_name/tmp/opencart3036/"* "$web_path/public_html"
-    rm -rf "/home/$user_name/tmp/opencart3036"
+    mv "/home/$user_name/tmp/opencart/"* "$web_path/public_html"
+    rm -rf "/home/$user_name/tmp/opencart"
 
     echo -e "\nInstallation completed"
 }
